@@ -12,6 +12,9 @@ dist/
 build/
 *.egg-info/
 
+# GitHub
+.github/
+
 # Virtual environments
 .venv/
 venv/
