@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  detector:
+    image: ${DETECTOR_IMAGE:-varianceiskey:latest}
+    build:
+      context: ../../apps/detector-py
+      dockerfile: Dockerfile
+    container_name: varianceiskey
+    ports:
+      - "${DETECTOR_PORT:-8765}:8000"
+    env_file:
+      - .env
+    volumes:
+      - ./models:/models:ro
+    restart: unless-stopped
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
