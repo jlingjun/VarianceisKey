@@ -21,7 +21,7 @@ Get VarianceisKey running in minutes with pre-built Docker images.
 ### Step 1: Pull Docker Image
 
 ```bash
-docker pull jlingjun/varianceiskey:latest
+docker pull merumeru/varianceiskey:latest
 ```
 
 ### Step 2: Install MCP Server
@@ -49,7 +49,7 @@ docker run -d \
   -p 8765:8000 \
   --gpus all \
   -v ~/varianceiskey/.env:/app/.env \
-  jlingjun/varianceiskey:latest
+  merumeru/varianceiskey:latest
 ```
 ### Step 5: Configure MCP Client
 Add to your MCP client config:
@@ -89,7 +89,7 @@ curl http://localhost:8765/health
 
 ### 步骤 1：拉取 Docker 镜像
 ```bash
-docker pull jlingjun/varianceiskey:latest
+docker pull merumeru/varianceiskey:latest
 ```
 ### 步骤 2：安装 MCP 服务器
 ```bash
@@ -116,7 +116,7 @@ docker run -d \
   -p 8765:8000 \
   --gpus all \
   -v ~/varianceiskey/.env:/app/.env \
-  jlingjun/varianceiskey:latest
+  merumeru/varianceiskey:latest
 ```
 ### 步骤 5：配置 MCP 客户端
 添加到您的 MCP 客户端配置中：

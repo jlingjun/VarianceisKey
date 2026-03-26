@@ -15,7 +15,7 @@ MCP Client (Claude/Trae/Cursor)
         ↓ stdio
 TypeScript MCP Server (mcp-varianceiskey)
         ↓ HTTP
-Python Detector Service (varianceiskey:latest)
+Python Detector Service (merumeru/varianceiskey:latest)
         ↓
 HuggingFace Model (Qwen3-0.6B)
 ```
@@ -59,7 +59,7 @@ MCP 客户端 (Claude/Trae/Cursor)
         ↓ stdio
 TypeScript MCP 服务器 (mcp-varianceiskey)
         ↓ HTTP
-Python 检测服务 (varianceiskey:latest)
+Python 检测服务 (merumeru/varianceiskey:latest)
         ↓
 HuggingFace 模型 (Qwen3-0.6B)
 ```

@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   detector:
-    image: ${DETECTOR_IMAGE:-varianceiskey:latest}
+    image: ${DETECTOR_IMAGE:-merumeru/varianceiskey:latest}
     build:
       context: ../../apps/detector-py
       dockerfile: Dockerfile

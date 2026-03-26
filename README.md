@@ -44,7 +44,7 @@ We chose the 0.6B parameter model to ensure that individual users can easily run
 
 ```bash
 # 1. Pull the Docker image
-docker pull jlingjun/varianceiskey:latest
+docker pull merumeru/varianceiskey:latest
 
 # 2. Install the MCP server globally
 npm install -g mcp-varianceiskey
@@ -68,7 +68,7 @@ docker run -d \
   -p 8765:8000 \
   --gpus all \
   -v ~/varianceiskey/.env:/app/.env \
-  jlingjun/varianceiskey:latest
+  merumeru/varianceiskey:latest
 
 # 5. Configure your MCP client
 ```
@@ -282,7 +282,7 @@ MIT License - See [LICENSE](LICENSE) for details.
 
 ```bash
 # 1. 拉取 Docker 镜像
-docker pull jlingjun/varianceiskey:latest
+docker pull merumeru/varianceiskey:latest
 
 # 2. 全局安装 MCP 服务器
 npm install -g mcp-varianceiskey
@@ -306,7 +306,7 @@ docker run -d \
   -p 8765:8000 \
   --gpus all \
   -v ~/varianceiskey/.env:/app/.env \
-  jlingjun/varianceiskey:latest
+  merumeru/varianceiskey:latest
 
 # 5. 配置 MCP 客户端
 ```
